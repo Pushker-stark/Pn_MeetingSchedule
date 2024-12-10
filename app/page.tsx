@@ -13,19 +13,22 @@ const Home = ({ searchParams }: SearchParamProps) => {
 
       <section className="remove-scrollbar container my-auto">
         <div className="sub-container max-w-[496px]">
-          <Image
-            src="/assets/icons/logo-full.svg"
-            height={1000}
-            width={1000}
-            alt="patient"
-            className="mb-12 h-10 w-fit"
-          />
+          <div className="flex items-center mb-4">
+            <Image
+              src="/AppointCare.png"
+              height={100}
+              width={100}
+              alt="patient"
+              className="w-50 rounded"
+            />
+            <div className="header ml-4 text-white text-2xl font-bold">AppointCare</div>
+          </div>
 
           <PatientForm />
 
           <div className="text-14-regular mt-20 flex justify-between">
             <p className="justify-items-end text-dark-600 xl:text-left">
-              © 2024 CarePluse
+              © 2024 AppointCare
             </p>
             <Link href="/?admin=true" className="text-green-500">
               Admin
@@ -35,7 +38,7 @@ const Home = ({ searchParams }: SearchParamProps) => {
       </section>
 
       <Image
-        src="/assets/images/onboarding-img.png"
+        src="/auth.jpeg"
         height={1000}
         width={1000}
         alt="patient"
